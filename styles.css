@@ -1,0 +1,289 @@
+:root {
+  --color-main: orangered;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Mali, cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #ffbbaa;
+  color: #050000;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 76px;
+  padding: 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #110200;
+  z-index: 1;
+}
+
+#header div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#header-img {
+  height: 100%;
+}
+
+#header h1 {
+  padding: 0 6px;
+  font-family: Shalimar, cursive;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--color-main);
+  text-shadow: 1px 2px black, -1px -1px rgba(255, 150, 0, 0.2);
+}
+
+#nav-bar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar ul li {
+  padding: 0 4px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-main);
+  font-weight: 700;
+}
+
+main {
+  margin: 92px auto 0px;
+  padding: 16px;
+  width: 800px;
+  max-width: 80%;
+}
+
+#section-form {
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  font: inherit;
+}
+
+[type="email"] {
+  width: 300px;
+  padding: 4px;
+}
+
+[type="email"]:focus {
+  background-color: #eecccc;
+}
+
+[type="submit"] {
+  padding: 6px 16px;
+  border: none;
+  background-color: #110200;
+  color: var(--color-main);
+}
+
+[type="submit"]:hover {
+  background-color: #220600;
+  cursor: pointer;
+}
+
+[type="submit"]:active {
+  background-color: #040000;
+  cursor: pointer;
+}
+
+#section-list ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.element-icon {
+  width: 15%;
+}
+
+.element img {
+  width: 100%;
+}
+
+.element-description {
+  width: 85%;
+  padding-left: 24px;
+}
+
+#section-video {
+  position: relative;
+  margin-top: 32px;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+#section-video div {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#section-video div h2 {
+  color: var(--color-main);
+}
+
+video {
+  width: 80%;
+}
+
+#section-cards {
+  margin: 32px 0;
+}
+
+#section-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 0;
+  width: 30%;
+  text-align: center;
+  box-shadow: 2px 2px 8px black;
+  transition: transform 0.5s;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-card h2 {
+  text-transform: uppercase;
+}
+
+.course-card strong {
+  display: block;
+  font-size: 2rem;
+  margin-top: 24px;
+  padding: 4px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.course-card ul {
+  margin: 24px 0;
+  list-style: inside "\2728";
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.course-card li {
+  margin-top: 8px;
+}
+
+.course-card a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 16px 8px;
+  background-color: #110200;
+  color: var(--color-main);
+}
+
+.course-card a:hover {
+  background-color: #220600;
+}
+
+.course-card a:active {
+  background-color: #040000;
+}
+
+footer {
+  width: 100%;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #110000;
+  color: var(--color-main);
+}
+
+@media (max-width: 900px) {
+  #section-cards {
+    margin: 0;
+  }
+
+  #section-cards > ul {
+    margin: 16px 0;
+    flex-direction: column;
+  }
+
+  .course-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 16px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  #nav-bar ul {
+    flex-direction: column;
+  }
+
+  #section-video div h2 {
+    font-size: calc(0.3rem + 3vw);
+  }
+}
+
+@media (max-width: 500px) {
+  .element-icon {
+    display: none;
+  }
+
+  .element-description {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  #header h1 {
+    display: none;
+  }
+
+  [type="email"] {
+    width: 90%;
+  }
+}

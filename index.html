@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <img id="header-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/56/Pok%C3%A9mon_Fire_Type_Icon.svg"
+                alt="Ruling the Elements logo">
+            <h1>Ruling the Elements</h1>
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#section-list" class="nav-link">Elements</a></li>
+                <li><a href="#section-video" class="nav-link">Presentation</a></li>
+                <li><a href="#section-cards" class="nav-link">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section-form">
+            <h2>Subscription to the news</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+                <input type="email" id="email" name="email" placeholder="Enter your e-mail here">
+                <input type="submit" id="submit" value="Subscribe">
+            </form>
+        </section>
+        <section id="section-list">
+            <ul>
+                <li class="element">
+                    <div class="element-icon"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Weather_icon_-_overcast.svg"
+                            alt="The air element logo"></div>
+                    <div class="element-description">
+                        <h2>Air</h2>
+                        <p>By mole fraction, dry air contains 78.08% nitrogen, 20.95% oxygen, 0.93% argon, 0.04% carbon
+                            dioxide, and small amounts of other gases.</p>
+                    </div>
+                </li>
+                <li class="element">
+                    <div class="element-icon"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/65/Icon-water-blue.svg"
+                            alt="The water element logo"></div>
+                    <div class="element-description">
+                        <h2>Water</h2>
+                        <p>Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical
+                            substance, which is the main constituent of Earth's hydrosphere and the fluids of all known
+                            living organisms.</p>
+                    </div>
+                </li>
+                <li class="element">
+                    <div class="element-icon"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/99/FireIcon.svg"
+                            alt="The fire element logo"></div>
+                    <div class="element-description">
+                        <h2>Fire</h2>
+                        <p>Fire is the rapid oxidation of a material in the exothermic chemical process of combustion,
+                            releasing heat, light, and various reaction products.</p>
+                    </div>
+                </li>
+                <li class="element">
+                    <div class="element-icon"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Mountain_icon-2.svg"
+                            alt="The earth element logo"></div>
+                    <div class="element-description">
+                        <h2>Earth</h2>
+                        <p>Earth is a mixture of organic matter, minerals, gases, liquids, and organisms that together
+                            support life.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="section-video">
+            <div>
+                <h2>Fire magic presentation</h2>
+            </div>
+            <video id="video" controls>
+                <source src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Erta_Ale_Volcano%2C_Ethiopia.webm"
+                    type="video/webm">
+                <p>Your browser doesn't support HTML5 video.</p>
+            </video>
+        </section>
+        <section id="section-cards">
+            <ul>
+                <li class="course-card">
+                    <div>
+                        <div>
+                            <h2>Apprentice</h2>
+                        </div>
+                        <strong>$200</strong>
+                        <ul>
+                            <li>Basic knowledge of the elements</li>
+                            <li>Simple spells</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#">Sign up</a>
+                    </div>
+                </li>
+                <li class="course-card">
+                    <div>
+                        <div>
+                            <h2>Master</h2>
+                        </div>
+                        <strong>$500</strong>
+                        <ul>
+                            <li>Strong knowledge of the elements</li>
+                            <li>Powerful spells</li>
+                            <li>Fancy cap</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#">Sign up</a>
+                    </div>
+                </li>
+                <li class="course-card">
+                    <div>
+                        <div>
+                            <h2>God</h2>
+                        </div>
+                        <strong>$1000</strong>
+                        <ul>
+                            <li>Mastery of the elements creation</li>
+                            <li>Spell scripting</li>
+                            <li>Psychotherapeutic services annual membership</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#">Sign up</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <span>&copy Yumee-Dev</span>
+    </footer>
+</body>
+
+</html>
